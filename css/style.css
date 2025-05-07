@@ -16,8 +16,24 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+
+h1 {
+  margin: 7px;
+  padding: 0 10px;
+  color: #36ff00;
+  font-family: "Rockwell Condensed", "Courier New", Courier, monospace;
+
+  text-align: center;
+  text-shadow: 0 0 10px #ffffff;
+
+  background-color: #000000;
+  border-radius: 10px;
+  border: 2px  white;
+  box-shadow: 0 0 10px #ff0707;
+}
 .container {
   height: 98vh;
+  position: relative;
 }
 .computer{
   background-color: #910909;
@@ -40,11 +56,66 @@ img:hover{
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
-  background-color: #00cc00;
+  background-color: rgba(0, 255, 0, 0.88);
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0 0 10px white;
   z-index: 100;
+}
+
+.table{
+  display: grid;
+  grid-template-columns: 1fr;
+
+
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  background-color: #5a2904;
+}
+
+.table img {
+  height: 100%;
+  width: 100%;
+}
+.computer-result{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+}
+.player-result{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: end;
+}
+
+.img-box{
+  margin: 0 auto;
+  width: 60px;
+  height: 50%;
+  border-radius: 5%;
+  border: 2px solid #550c0c;
+  box-shadow: 0 0 10px white;
+  z-index: 100;
+  background-color: #71370b;
+}
+
+.img-box img:hover{
+  cursor: pointer;
+  transform: scale(1.7);
+  transition: all 0.1s ease-in-out;
+  background-color: #711317;
+  border-radius: 30%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
 }
 
 .selection-computer{
